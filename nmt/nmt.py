@@ -231,7 +231,7 @@ def add_arguments(parser):
                       help="Number of gpus in each worker.")
   parser.add_argument("--log_device_placement", type="bool", nargs="?",
                       const=True, default=False, help="Debug GPU allocation.")
-  parser.add_argument("--metrics", type=str, default="bleu",
+  parser.add_argument("--metrics", type=str, default="f_score",
                       help=("Comma-separated list of evaluations "
                             "metrics (bleu,rouge,accuracy,f_score)"))
   parser.add_argument("--steps_per_external_eval", type=int, default=None,
